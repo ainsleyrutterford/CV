@@ -1,0 +1,27 @@
+\vspace{-1.1em}
+
+\cvsection{References}
+
+\newcommand{\cvdoublecolumn}[2]{%
+	\begin{minipage}[t]{{.45\linewidth}}#1\end{minipage}%
+	\hfill%
+	\begin{minipage}[t]{{.45\linewidth}}#2\end{minipage}%
+}
+
+\newcommand{\cvreference}[2]{%
+	\ifthenelse{\equal{#1}{}}{}{#1\newline}%
+	\ifthenelse{\equal{#2}{}}{}{\href{mailto:#2}{\faEnvelope\acvHeaderIconSep~#2\newline}}%
+}
+
+% \vspace{-2em}
+
+\cvdoublecolumn{
+\footnotesize
+\cvreference{\textbf{Prof. Simon McIntosh-Smith~~|~~University of Bristol}}
+	{s.mcintosh-smith@bristol.ac.uk}
+}
+{
+\footnotesize
+\cvreference{\textbf{Dr. Gethin Williams~~|~~ACRC}}
+	{gethin.williams@bristol.ac.uk}
+}
